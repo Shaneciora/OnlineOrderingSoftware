@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <title>Place Order</title>
+  <head>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+      <link href='https://fonts.google.com/specimen/Roboto' rel='stylesheet'>
+    <style>
+    #nameInput {
+
+    }
+    
+    </style>
+  </head>
+  <body>
+
+    <center><h1>Menu</h1></center>
+    <form id="orderForm" action="/submit_form" method="POST">
+        <h5>Appetisers</h5>
+        
+        <!--BRUSCHETTA-->
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <div class="form-row align-items-center">
+                        <div class="col-sm-1 my-1">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="0">
+                        </div>
+                        <div class="col-sm-10 my-1">
+                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">BRUSCHETTA</label>
+                        </div>
+                    </div>
+                    <footer class="blockquote-footer">French baguette topped with mixture of tomato, minced garlic, EVOO, balsamic vinegar, chopped basil, salt and pepper.
+                    Drizzled with Balsamic glaze</footer>
+                  </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <!--Artichoke Dip-->
+        <div class="card">
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <div class="form-row align-items-center">
+                        <div class="col-sm-1 my-1">
+                            <input type="text" class="form-control" id="inlineFormInputName" placeholder="0">
+                        </div>
+                        <div class="col-sm-10 my-1">
+                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">PARMESAN ARTICHOKE DIP</label>
+                        </div>
+                    </div>
+                    <footer class="blockquote-footer">Artichoke hearts combined with gruyere cheese, parmesan, cream cheese, caramelized onion & garlic. Then topped with garlic-panko bread crumbs and baked to perfection.
+                    Served with toasted French baguettee</footer>
+                  </blockquote>
+                </div>
+            </div>
+        </div>
+        
+        <br><br><br><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="nameInput" name="textInput" value="John"><br><br>
+        <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+    
+  </body>
+</html>
